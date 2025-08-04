@@ -1,65 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Formulario de Consulta</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    input, textarea {
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    button {
-      background-color: #222;
-      color: #ffd700;
-      border: none;
-      padding: 12px;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #444;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Consulta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #222;
+            color: #ffd700;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #444;
+        }
+    </style>
 </head>
 <body>
-  <h1>Formulario de consulta</h1>
-    <form action="https://formsubmit.io/send/ballesterdigital@gmail.com" method="POST">
-    <input type="text" name="nombre" placeholder="Nombre y apellido" required>
-    <input type="tel" name="telefono" placeholder="Teléfono / WhatsApp" required>
-    <input type="email" name="correo" placeholder="Correo electrónico" required>
-    <input type="text" name="asunto" placeholder="Asunto" required>
-    <textarea name="mensaje" placeholder="Descripción del problema o consulta" rows="5" required></textarea>
+    <h1>Formulario de consulta</h1>
+    <form action="https://formsubmit.co/ballesterdigital@gmail.com" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre y apellido" required>
+        <input type="tel" name="telefono" placeholder="Teléfono / WhatsApp" required>
+        <input type="email" name="correo" placeholder="Correo electrónico" required>
+        <input type="text" name="asunto" placeholder="Asunto" required>
+        <textarea name="mensaje" placeholder="Descripción del problema o consulta" rows="5" required></textarea>
 
-    <!-- Anti-bot -->
-    <input name="_formsubmit_id" type="text" style="display:none">
+        <input type="hidden" name="_next" value="https://www.ballesterdigital.com.ar/gracias">
 
-    <!-- Redirección a tu dominio principal -->
-    <input type="hidden" name="_redirect" value="https://ballesterdigital.com.ar/gracias">
-
-    <button type="submit">Enviar consulta</button>
-  </form>
+        <input type="hidden" name="_template" value="table">
+        
+        <button type="submit">Enviar consulta</button>
+    </form>
 </body>
 </html>
