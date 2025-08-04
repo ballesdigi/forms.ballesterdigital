@@ -4,59 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario de Consulta</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        input, textarea {
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-        button {
-            background-color: #222;
-            color: #ffd700;
-            border: none;
-            padding: 12px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #444;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Formulario de consulta</h1>
     <form action="https://formsubmit.co/ballesterdigital@gmail.com" method="POST">
-        <input type="text" name="nombre" placeholder="Nombre y apellido" required>
-        <input type="tel" name="telefono" placeholder="Teléfono / WhatsApp" required>
-        <input type="email" name="correo" placeholder="Correo electrónico" required>
-        <input type="text" name="asunto" placeholder="Asunto" required>
-        <textarea name="mensaje" placeholder="Descripción del problema o consulta" rows="5" required></textarea>
+        <input type="text" name="Nombre" placeholder="Nombre y apellido" required>
+        <input type="tel" name="Teléfono" placeholder="Teléfono / WhatsApp" required>
+        <input type="email" name="Correo electrónico" placeholder="Correo electrónico" required>
+        <input type="text" name="Asunto" placeholder="Asunto" required>
+        <textarea name="Mensaje" placeholder="Descripción del problema o consulta" rows="5" required></textarea>
 
-        <input type="hidden" name="_next" value="https://www.ballesterdigital.com.ar/gracias">
+        <input type="hidden" name="_subject" value="Nueva consulta de tu web!">
 
         <input type="hidden" name="_template" value="table">
         
+        <input type="hidden" name="_next" value="https://www.ballesterdigital.com.ar/gracias">
+
         <button type="submit">Enviar consulta</button>
     </form>
 </body>
